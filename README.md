@@ -172,4 +172,5 @@ bellabeat-fitness-analytics/
 
 B.Tech Artificial Intelligence & Data Science
 SVKM's NMIMS Mukesh Patel School of Technology Management & Engineering
+
 LinkedIn: [www.linkedin.com/in/yohanvora](http://www.linkedin.com/in/yohanvora)

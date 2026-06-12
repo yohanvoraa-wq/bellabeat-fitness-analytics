@@ -2,186 +2,167 @@
 
 ## Project Overview
 
-This project was completed as the capstone project for the Google Data Analytics Professional Certificate.
+This project was completed as the capstone project for the Google Data Analytics Professional Certificate. The objective was to analyze Fitbit smart-device usage data and identify behavioral patterns that could help Bellabeat improve customer engagement, product development, and marketing effectiveness.
 
-The objective was to analyze Fitbit smart-device usage data to identify behavioral patterns and generate data-driven business recommendations for Bellabeat, a wellness technology company focused on women's health.
-
-Using R for data cleaning, transformation, exploratory data analysis, and visualization, the project investigates relationships between physical activity, calorie expenditure, sleep behavior, and user engagement.
+Following Google's six-step data analytics process (Ask, Prepare, Process, Analyze, Share, and Act), the project involved data cleaning, transformation, exploratory data analysis, visualization, and business recommendation development using R.
 
 ---
 
 ## Business Problem
 
-Bellabeat aims to better understand how consumers use smart fitness devices in their daily lives.
+Bellabeat is a health-focused technology company that develops smart wellness products. The company wanted to better understand how consumers use smart fitness devices and how those insights could be leveraged to support future marketing and growth strategies.
 
-This analysis seeks to answer:
+### Key Questions
 
-- What trends exist in smart-device usage?
-- How do users engage with activity and sleep tracking features?
-- How can these insights help Bellabeat improve customer engagement?
-- What marketing opportunities can Bellabeat leverage from the findings?
+* What trends exist in smart-device usage?
+* How do consumers engage with fitness tracking features?
+* What opportunities exist for improving user engagement?
+* How can these insights support Bellabeat's marketing strategy?
 
 ---
 
 ## Dataset
 
-**Source:** Fitbit Fitness Tracker Data (Kaggle)
+**Source:** Fitbit Fitness Tracker Dataset (Mobius / Kaggle)
 
-**Files Used:**
+The dataset contains daily activity, sleep, calorie expenditure, and wellness tracking information collected from Fitbit users over multiple weeks.
 
-- dailyActivity_merged.csv
-- sleepDay_merged.csv
-- weightLogInfo_merged.csv
+### Files Used
 
-The dataset contains anonymized fitness tracking information, including daily activity metrics, calories burned, step counts, sleep records, and wellness-related indicators collected from Fitbit users.
+* dailyActivity_merged.csv
+* sleepDay_merged.csv
+* weightLogInfo_merged.csv
 
 ---
 
 ## Tools & Technologies
 
-- R Programming
-- tidyverse
-- dplyr
-- ggplot2
-- lubridate
-- Data Cleaning
-- Exploratory Data Analysis (EDA)
-- Statistical Analysis
-- Data Visualization
-- Business Intelligence
+### Programming & Analytics
+
+* R
+* tidyverse
+* dplyr
+* ggplot2
+* lubridate
+
+### Data Analytics Skills
+
+* Data Cleaning
+* Data Transformation
+* Exploratory Data Analysis (EDA)
+* Data Visualization
+* Statistical Analysis
+* Business Intelligence
+* Insight Generation
 
 ---
 
 ## Project Workflow
 
-### 1. Data Collection
+### Ask
 
-Imported Fitbit activity, sleep, and weight datasets.
+Defined the business objective and stakeholder requirements.
 
-### 2. Data Cleaning
+### Prepare
 
-- Removed duplicates
-- Handled missing values
-- Standardized date formats
-- Validated data consistency
+Collected, assessed, and validated Fitbit activity and wellness datasets.
 
-### 3. Data Transformation
+### Process
 
-- Merged relevant datasets
-- Created derived metrics
-- Prepared data for analysis
+Performed data cleaning, formatting, duplicate removal, and data quality checks.
 
-### 4. Exploratory Data Analysis
+### Analyze
 
-Examined activity levels, sleep patterns, calorie expenditure, and user behavior trends.
+Explored relationships between activity levels, calories burned, and sleep behavior.
 
-### 5. Data Visualization
+### Share
 
-Generated visualizations to identify patterns and communicate insights effectively.
+Created visualizations and summarized key behavioral trends.
 
-### 6. Business Recommendations
+### Act
 
-Translated analytical findings into actionable recommendations for Bellabeat's marketing and product strategy.
-
----
-
-## Key Visualizations
-
-The project includes visualizations covering:
-
-- Daily Steps Distribution
-- Activity Level Breakdown
-- Steps vs Calories Burned Relationship
-- Sleep Duration Analysis
-- User Engagement Patterns
-
-All visual outputs can be found in the **visualizations/** directory.
+Developed actionable business recommendations for Bellabeat's marketing and product strategy.
 
 ---
 
 ## Key Findings
 
-### Activity Trends
+### Physical Activity Trends
 
-Most users fall within the moderate activity range, averaging between 5,000 and 10,000 daily steps.
+Most users averaged between 5,000 and 10,000 daily steps, indicating moderate activity levels.
 
 ### Calories Burned
 
-A strong positive correlation exists between daily steps and calories burned, highlighting the impact of physical activity on energy expenditure.
+A strong positive relationship was observed between daily steps and calories burned, demonstrating the effectiveness of activity tracking as a wellness metric.
 
-### Sleep Behavior
+### Sleep Patterns
 
-Average sleep duration is approximately seven hours, suggesting opportunities for wellness improvement through sleep-focused recommendations.
+Average sleep duration was approximately seven hours per night, slightly below recommended sleep guidelines.
 
 ### User Engagement
 
-Tracking behavior varies significantly across users, indicating potential for personalized engagement strategies and targeted product features.
+Sleep-tracking adoption varied significantly across users, suggesting opportunities to improve engagement through personalized wellness insights.
+
+---
+
+## Key Visualizations
+
+The analysis includes multiple visualizations developed using ggplot2 in R to identify behavioral patterns and communicate findings effectively.
+
+### Visualizations Included
+
+* Distribution of Daily Steps
+* Activity Level Breakdown
+* Relationship Between Steps and Calories Burned
+* Average Sleep Duration by Activity Level
+
+These visualizations support the project's findings by highlighting user activity patterns, calorie expenditure trends, and sleep behavior insights. All visualization files are available in the **visualizations/** directory.
 
 ---
 
 ## Business Recommendations
 
-- Develop personalized wellness coaching features.
-- Promote sleep-focused health programs.
-- Implement activity-based customer segmentation.
-- Create targeted marketing campaigns using behavioral insights.
-- Increase engagement through personalized fitness recommendations.
+* Develop personalized activity and wellness coaching features.
+* Strengthen sleep-focused product insights and recommendations.
+* Implement behavior-based customer segmentation strategies.
+* Design targeted marketing campaigns based on user activity patterns.
+* Increase user engagement through personalized notifications and wellness goals.
 
 ---
 
 ## Repository Structure
 
+```text
 bellabeat-fitness-analytics/
-
 ├── data/
-
 │   ├── dailyActivity_merged.csv
-
 │   ├── sleepDay_merged.csv
-
 │   └── weightLogInfo_merged.csv
-
 │
-
 ├── scripts/
-
 │   └── bellabeat_analysis.R
-
 │
-
-├── visualizations/
-
-│   ├── daily_steps_distribution.png
-
-│   ├── activity_level_breakdown.png
-
-│   ├── steps_vs_calories_burned.png
-
-│   └── sleep_duration_by_activity_level.png
-
-│
-
 ├── report/
-
 │   └── Bellabeat_Fitness_Analytics_Case_Study.pdf
-
 │
-
+├── visualizations/
+│   ├── daily_steps_distribution.png
+│   ├── activity_level_breakdown.png
+│   ├── steps_vs_calories_burned.png
+│   └── sleep_duration_by_activity_level.png
+│
 └── README.md
+```
 
 ---
 
-## Skills Demonstrated
+## Project Deliverables
 
-- Data Cleaning
-- Data Wrangling
-- Exploratory Data Analysis
-- Statistical Thinking
-- Data Visualization
-- Business Analytics
-- R Programming
-- Stakeholder-Oriented Reporting
-- Data-Driven Decision Making
+* Complete R Analysis Script
+* Cleaned Fitbit Datasets
+* Data Visualizations
+* Final Business Report
+* Strategic Recommendations for Bellabeat
 
 ---
 
@@ -190,11 +171,5 @@ bellabeat-fitness-analytics/
 **Yohan Vora**
 
 B.Tech Artificial Intelligence & Data Science
-
-SVKM's NMIMS MPSTME
-
-Google Data Analytics Professional Certificate
-
-LinkedIn: www.linkedin.com/in/yohanvora
-
----
+SVKM's NMIMS Mukesh Patel School of Technology Management & Engineering
+LinkedIn: [www.linkedin.com/in/yohanvora](http://www.linkedin.com/in/yohanvora)
